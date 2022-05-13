@@ -12,6 +12,9 @@ const fontHelperStyles = StyleSheet.create({
         color:'#6666FF',
         textDecorationLine:'underline',
         textDecorationColor:'#3333FF'
+    },
+    inputText:{
+        fontSize:15
     }
 })
 

@@ -31,7 +31,7 @@ const LoginComponent = (props) => {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.password}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('ForgotPass')}>
                         <Text style={fontHelperStyles.link}>Forgot Password ?</Text>
                     </TouchableOpacity>
                 </View>

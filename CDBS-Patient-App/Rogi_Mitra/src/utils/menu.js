@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Octicons';
 import MatIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Menu, Provider, Divider } from 'react-native-paper';
+import { Menu, Provider, Divider, Button } from 'react-native-paper';
 import fontHelperStyles from './fontHelper';
 import AppColors from './appbg';
 
@@ -17,9 +17,9 @@ const HeaderMenu = () => {
             <View style={styles.menuView}>
                 <View>
                     <Provider>
-                        <Menu visible={visible} onDismiss={closeMenu} anchor={<TouchableOpacity onPress={openMenu}>
+                        <Menu visible={visible} onDismiss={closeMenu} anchor={<Button onPress={openMenu}>
                             <Icon name="three-bars" size={30} color="#900" />
-                        </TouchableOpacity>} contentStyle={styles.menuItems}>
+                        </Button>} contentStyle={styles.menuItems}>
                         <Menu.Item onPress={() => {}} title=" "/>
                         <Divider />
                         <Menu.Item onPress={() => {}} title="Item 1"/>

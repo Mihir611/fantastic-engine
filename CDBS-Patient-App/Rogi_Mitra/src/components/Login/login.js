@@ -26,7 +26,7 @@ const LoginComponent = (props) => {
                     <Button icon='login' mode='contained' dark={true} style={[styles.button,styles.textInputStyles]} onPress={() => props.navigation.navigate('Home')}> Login </Button>
                 </View>
                 <View style={styles.register}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('Register')}>
                         <Text style={fontHelperStyles.link}>New User ?</Text>
                     </TouchableOpacity>
                 </View>
